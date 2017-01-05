@@ -1,0 +1,28 @@
+{
+   "customerEmail":"tarora23@valyoo.in",
+   "storeId":"1",
+   "shippingInfo":{
+      "pincode":"110025",
+      "country":"IN"
+   },
+   "quote":{
+      "storeCreditApplied":"Y",
+      "gvApplied":"N",
+      "quoteId":"265381356",
+      "grandTotal":{
+         "price":49000
+      },
+      "items":[
+         {
+            "id":"59053628",
+            "productId":"108511",
+            "sku":"sun:vincent-chase-vc-5158-black-grey-gradient-c5-aviator-sunglas"
+         },
+         {
+            "id":"59053628",
+            "productId":"108511",
+            "sku":"sun:vincent-chase-vc-5158-black-grey-gradient-c5-aviator-sunglas"
+         }
+      ]
+   }
+}

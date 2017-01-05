@@ -1,0 +1,132 @@
+{
+    "paymentMethods":[
+        {
+            "code":"cc",
+            "label":"Credit Card",
+            "gatewayId": "PU",
+            "prepaidDiscountAmount": null,
+            "enabled":true,
+            "disabledMessage":null,
+        },
+        {
+            "code":"dc",
+            "label":"Debit Card",
+            "gatewayId": "PU",
+            "prepaidDiscountAmount": null,
+            "enabled":true,
+            "disabledMessage":null,
+        },
+        {
+            "code":"nb",
+            "label":"Net Banking",
+            "gatewayId": "PU",
+            "prepaidDiscountAmount": null,
+            "enabled":true,
+            "disabledMessage":null,
+            "banks":[
+                {
+                    "name":"RBS (The Royal Bank of Scotland)",
+                    "bankcode":"RBS",
+                },
+                {
+                    "name":"Bank of India",
+                    "bankcode":"BOIB",
+                },
+                {
+                    "name":"Indian Overseas Bank",
+                    "bankcode":"INOB",
+                }
+            ]
+        },
+        {
+            "code":"cod",
+            "label":"Cash On Delivery",
+            "enabled":true,
+            "disabledMessage":null
+        },
+        {
+            "code":"wallet",
+            "label":"MobiKwik Wallet",
+            "enabled":true,
+            "disabledMessage":null
+        },
+        {
+            "code":"paytm_cc",
+            "label":"PayTM Wallet",
+            "enabled":true,
+            "disabledMessage":null
+        },
+        {
+            "code":"partialpayment",
+            "label":"Partial Payment",
+            "enabled":true,
+            "disabledMessage":null
+        },
+        {
+            "code":"sc",
+            "label":"Store Credit",
+            "enabled":true,
+            "disabledMessage":null
+        },
+        {
+            "code":"gv",
+            "label":"Gift Voucher",
+            "enabled":true,
+            "disabledMessage":null
+        }
+    ],
+    "defaultMethodCode":"cc",
+    "prepaidOrderCartEnabled":"N",
+    "showCod":"Y",
+    "packageAvailForCod":"Y",
+    "prepaidDiscountAmount":"50",
+    "savedCards":[
+        {
+            "nameOnCard":"Any Name",
+            "number":"512345XXXXXX2346",
+            "cvv":null,
+            "expiryMonth":null,
+            "expiryYear":null,
+            "cardBrand":"MASTERCARD",
+            "cardMode":"CC",
+            "cardType":"CC",
+            "storeCard":true,
+            "cardToken":"20cc3770cef05fc08b6dd7e370a4717b964756dd",
+            "oneClick":null,
+            "oneClickToken":null,
+            "expired":false
+        },
+        {
+            "nameOnCard":"any name",
+            "number":"401200XXXXXX3335",
+            "cvv":null,
+            "expiryMonth":null,
+            "expiryYear":null,
+            "cardBrand":"VISA",
+            "cardMode":"CC",
+            "cardType":"CC",
+            "storeCard":true,
+            "cardToken":"2120fd2c7a122832ad10ab28a54ce46ad92c4ca4",
+            "oneClick":null,
+            "oneClickToken":null,
+            "expired":false
+        },
+        {
+            "nameOnCard":"any name",
+            "number":"401200XXXXXX1112",
+            "cvv":null,
+            "expiryMonth":null,
+            "expiryYear":null,
+            "cardBrand":"VISA",
+            "cardMode":"CC",
+            "cardType":"CC",
+            "storeCard":true,
+            "cardToken":"dd2c4229a9e599b4ca86524de177b353689c373b",
+            "oneClick":null,
+            "oneClickToken":null,
+            "expired":false
+        }
+    ]
+}
+
+
