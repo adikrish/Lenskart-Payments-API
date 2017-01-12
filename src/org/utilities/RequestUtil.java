@@ -22,6 +22,7 @@ public class RequestUtil {
 
 	public static HttpResponse getRequest(String restUrl) throws ClientProtocolException, IOException {
 		// httpClient = HttpClients.createDefault();
+
 		HttpGet getReq = new HttpGet(restUrl);
 		HttpResponse getResponse = httpClient.execute(getReq);
 

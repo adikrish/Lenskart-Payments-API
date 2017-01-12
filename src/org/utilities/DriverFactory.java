@@ -23,7 +23,7 @@ public class DriverFactory {
 	public void loadProperties(String flavor) throws IOException {
 		masterProp = new Properties();
 		fileloc = System.getProperty("user.dir") + "//ConfigFiles//" + flavor + ".properties";
-		System.out.println("Property filr path : " + fileloc);
+		System.out.println("Property file path : " + fileloc);
 		File f = new File(fileloc);
 		FileInputStream fis = new FileInputStream(f);
 		masterProp.load(fis);
@@ -41,7 +41,7 @@ public class DriverFactory {
 
 		// Set config file path here..
 		String fileLoc = System.getProperty("user.dir") + "/configFiles/" + flavour + ".properties";
-		System.out.println("Property filr path : " + fileloc);
+		System.out.println("Property file path : " + fileloc);
 		try {
 			File f = new File(fileLoc);
 			FileInputStream fis = new FileInputStream(f);

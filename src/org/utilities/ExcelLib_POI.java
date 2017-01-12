@@ -16,7 +16,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelLib_POI {
 
-	private static final Logger log = Logger.getRootLogger();
+	// private static final Logger log = Logger.getRootLogger();
+	private static final Logger log = Logger.getLogger(ExcelLib_POI.class);
 	XSSFWorkbook workbook;
 	XSSFSheet sheet;
 
@@ -60,7 +61,6 @@ public class ExcelLib_POI {
 		}
 	}
 
-	
 	/*************************************************************************
 	 * This Private method is to create a map of column value to index. This is
 	 * required to get the call value based on columnName
@@ -68,7 +68,7 @@ public class ExcelLib_POI {
 	private void createColumnNameIndexMap() {
 
 		log.debug("inside method to create createColumnNameIndexMap");
-		//Create a columnList as well
+		// Create a columnList as well
 		columnNamesList = new ArrayList<String>();
 		columnIndexMap = new HashMap<String, Integer>();
 
@@ -85,8 +85,8 @@ public class ExcelLib_POI {
 			Cell cell = row.getCell(colIx);
 			// add the cell contents and its index to map
 			columnIndexMap.put(cell.getStringCellValue(), cell.getColumnIndex());
-			
-			//Create a column values list as well
+
+			// Create a column values list as well
 			columnNamesList.add(cell.getStringCellValue());
 		}
 	}
@@ -126,7 +126,7 @@ public class ExcelLib_POI {
 
 	public String getCellValue(int rowNum, int colNum) {
 		log.debug("geting cell value of the excel sheet");
-		
+
 		Row row = sheet.getRow(rowNum);
 		Cell cell = row.getCell(colNum);
 		return cell.getStringCellValue();
@@ -158,13 +158,13 @@ public class ExcelLib_POI {
 		// (sheet.getRow(rowIndex).getLastCellNum() -
 		// sheet.getRow(rowIndex).getFirstCellNum()));
 		int colCount = 0;
-		try{
-			colCount	=  sheet.getRow(rowIndex).getPhysicalNumberOfCells();
-		}catch (Exception e){
+		try {
+			colCount = sheet.getRow(rowIndex).getPhysicalNumberOfCells();
+		} catch (Exception e) {
 			System.out.println("Excetion caught. Column is null. returning count as 0");
-			//colCount = 0;
+			// colCount = 0;
 		}
-		
+
 		return colCount;
 	}
 
@@ -184,12 +184,12 @@ public class ExcelLib_POI {
 		return pair;
 	}
 
-	public HashMap<String, Integer> getColumnIndexMap(){
+	public HashMap<String, Integer> getColumnIndexMap() {
 		return columnIndexMap;
 	}
-	
-	public ArrayList<String> getColumnNamesList(){
+
+	public ArrayList<String> getColumnNamesList() {
 		return columnNamesList;
 	}
-	
+
 }
